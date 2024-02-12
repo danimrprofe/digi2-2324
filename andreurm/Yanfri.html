@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contador de clics</title>
+<style>
+  .boton-verde {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+</style>
+</head>
+<body>
+<h1><p>Yuda a yanfri</p></h1>
+<button id="boton" class="boton-verde">Haz clic aquí</button>
+<p id="contador">0</p>
+
+<script>
+  // Obtenemos el botón y el párrafo del contador
+  var boton = document.getElementById("boton");
+  var contador = document.getElementById("contador");
+
+  // Inicializamos el contador
+  var contadorClics = 0;
+
+  // Agregamos un evento de clic al botón
+  boton.addEventListener("click", function() {
+    // Incrementamos el contador de clics en 20
+    contadorClics += 20;
+    // Mostramos el contador actualizado
+    contador.textContent = contadorClics;
+  });
+</script>
+
+</body>
+</html>
